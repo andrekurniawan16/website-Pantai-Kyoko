@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: url("gambar/backg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  z-index: 1;
+}
+
+header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+nav {
+  background: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  margin-bottom: 40px;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d47a1;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0d47a1;
+  padding-bottom: 6px;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery img,
+.gallery iframe {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+form button {
+  background-color: #0d47a1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #1565c0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Scroll to top button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0d47a1;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 1000;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#scrollTopBtn:hover {
+  background: #1565c0;
+}
